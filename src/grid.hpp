@@ -22,6 +22,8 @@ namespace tfa {
             bool populate();
             void make_move(Direction direction);
 
+            std::uint64_t& at(const cordinate& cordinate);
+
             [[nodiscard]] bool is_over() const;
             [[nodiscard]] std::uint64_t score() const;
             [[nodiscard]] std::array<std::array<std::uint64_t, size>, size> grid_array() const;
