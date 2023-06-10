@@ -1,6 +1,9 @@
 #include <array>
 #include <concepts>
 #include <cstdint>
+#include <vector>
+
+#include "cordinate.hpp"
 
 namespace tfa {
     template <std::integral auto size>
@@ -22,5 +25,7 @@ namespace tfa {
             [[nodiscard]] bool is_over() const;
             [[nodiscard]] std::uint64_t score() const;
             [[nodiscard]] std::array<std::array<std::uint64_t, size>, size> grid_array() const;
+
+            [[nodiscard]] std::vector<cordinate> empty_cordinates() const;
     };
 }
