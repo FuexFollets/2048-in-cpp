@@ -1,0 +1,20 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++23",
+      "-Wshadow",
+      "-Wall",
+      "-Wextra",
+      "-pedantic-errors",
+      "-pedantic",
+      "-c",
+      "-o",
+      "dist/objects/grid.o",
+      "src/grid.cpp"
+    ],
+    "directory": "/home/fuexfollets/Projects/2048-in-cpp",
+    "file": "/home/fuexfollets/Projects/2048-in-cpp/src/grid.cpp",
+    "output": "/home/fuexfollets/Projects/2048-in-cpp/dist/objects/grid.o"
+  }
+]
