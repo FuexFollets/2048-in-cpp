@@ -10,7 +10,7 @@
 *.obj
 
 dist/*
-bin/*
+bin
 
 # Precompiled Headers
 *.gch
