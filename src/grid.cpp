@@ -8,6 +8,16 @@
 
 namespace tfa {
     template <std::integral auto size>
+    std::uint64_t& grid<size>::at(std::size_t x_pos, std::size_t y_pos) {
+        return this -> _grid.at(x_pos).at(y_pos);
+    }
+
+    template <std::integral auto size>
+    std::uint64_t& grid<size>::at(const cordinate& cordinate) {
+        return this -> at(cordinate.x_pos, cordinate.y_pos);
+    }
+
+    template <std::integral auto size>
     bool grid<size>::populate() {
         const std::vector<cordinate> empty_cordinates = this -> empty_cordinates();
 

@@ -22,6 +22,7 @@ namespace tfa {
             bool populate();
             void make_move(Direction direction);
 
+            std::uint64_t& at(std::size_t x_pos, std::size_t y_pos);
             std::uint64_t& at(const cordinate& cordinate);
 
             [[nodiscard]] bool is_over() const;
